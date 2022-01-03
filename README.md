@@ -8,6 +8,11 @@ I am interested in 3D Camera Calibration for extended reality headset in Metaver
 
 FarshidPirahanSiah
 
+I am interested in Metaverse, Medicine
+I have over 15 years experience in computer vision, with more than 5 years in deep learning.
+I am familiar with IoT and Edge computing, Medical devices, cloud base solution (AWS), robotic.
+
+
 ![pirahansiah's GitHub stats](https://github-readme-stats.vercel.app/api?username=pirahansiah&include_all_commits=true&count_private=true&show_icons=true&theme=radical&hide=contribs)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=pirahansiah&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
