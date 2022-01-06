@@ -13,4 +13,14 @@ I am familiar with IoT and Edge computing, Medical devices, cloud base solution 
 ![pirahansiah's GitHub stats](https://github-readme-stats.vercel.app/api?username=pirahansiah&include_all_commits=true&count_private=true&show_icons=true&theme=radical&hide=contribs)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=pirahansiah&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
+Top source code:
+
+    - cornerDetection.ipynb
+        
+        - It use several preprocessing and postprocessing steps to enhance corner detection use by camera calibration.
+
+        - 3D multi camera calibration require detect and set points for all camera togather 
+
+        - if the calibration pattern images are not good, blur, ... it need to enhance it first then use corner points to detect and use for calibration process
+        
 
