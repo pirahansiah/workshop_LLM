@@ -15,6 +15,14 @@ I am familiar with IoT and Edge computing, Medical devices, cloud base solution 
 
 Platform for metaverse 
 
+
+- CV_metaverse
+    - 3D_multi_camera_calibration
+        - corner_Detection 
+            - cornerDetection.ipynb
+
+
+
 Top source code:
 
     - cornerDetection.ipynb
@@ -25,8 +33,3 @@ Top source code:
 
         - if the calibration pattern images are not good, blur, ... it need to enhance it first then use corner points to detect and use for calibration process
 
-
-- CV_metaverse
-    - 3D_multi_camera_calibration
-        - corner_Detection 
-            - cornerDetection.ipynb
