@@ -13,8 +13,17 @@ I am familiar with IoT and Edge computing, Medical devices, cloud base solution 
 ![pirahansiah's GitHub stats](https://github-readme-stats.vercel.app/api?username=pirahansiah&include_all_commits=true&count_private=true&show_icons=true&theme=radical&hide=contribs)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=pirahansiah&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
-Platform for metaverse 
+Platform for metaverse   
+The first step for camera calibration is corner detection. Based on my research, the calibration pattern image play important rule in the whole calibration process.
 
+1. Camera calibration for multi-modal robot vision based on image quality assessment
+https://www.researchgate.net/profile/Farshid-Pirahansiah/publication/288174690_Camera_calibration_for_multi-modal_robot_vision_based_on_image_quality_assessment/links/5735bc2908aea45ee83c999e/Camera-calibration-for-multi-modal-robot-vision-based-on-image-quality-assessment.pdf 
+
+2. Pattern image significance for camera calibration
+https://ieeexplore.ieee.org/abstract/document/8305440 
+
+3. Camera Calibration and Video Stabilization Framework for Robot Localization
+https://link.springer.com/chapter/10.1007/978-3-030-74540-0_12 
 
 - CV_metaverse
     - 3D_multi_camera_calibration
