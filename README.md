@@ -14,6 +14,9 @@ I am familiar with IoT and Edge computing, Medical devices, cloud base solution 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=pirahansiah&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
 Platform for metaverse   
+AR/VR Frameworks Engineer For New Application Paradigm
+
+
 The first step for camera calibration is corner detection. Based on my research, the calibration pattern image play important rule in the whole calibration process.
 
 1. Camera calibration for multi-modal robot vision based on image quality assessment
