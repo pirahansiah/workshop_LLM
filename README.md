@@ -32,6 +32,7 @@ https://link.springer.com/chapter/10.1007/978-3-030-74540-0_12
     - 3D_multi_camera_calibration
         - corner_Detection 
             - cornerDetection.ipynb
+        - auto multi camera calibration 
 
 
 
