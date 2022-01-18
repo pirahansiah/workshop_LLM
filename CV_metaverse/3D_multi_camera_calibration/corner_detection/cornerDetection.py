@@ -1,4 +1,6 @@
-# Updated 07.Jan.2022
+# www.tiziran.com
+
+# Updated 18.Jan.2022
 # This function use several methods for preprocessing and postprocessing images for better recognition calibration pattern.
 # The pre build function of chessboard detection in OpenCV failed to recognize some calibration patterns
 
@@ -23,6 +25,30 @@
 
 # 3. Camera Calibration and Video Stabilization Framework for Robot Localization
 # https://link.springer.com/chapter/10.1007/978-3-030-74540-0_12 
-        
-print("farshid")
+
+import os
+import sys
 import cv2
+import tqdm
+import urllib
+import numpy as np
+
+from skimage.io import imread
+from skimage.color import rgb2gray
+
+from scipy import *
+from scipy import signal as sig
+from scipy.ndimage import gaussian_filter
+
+sys.path.append(r'local_functions')
+from list_files import list_files
+from chessboard_corners import chessboard_corners
+
+filePathURL = r"https://raw.githubusercontent.com/opencv/opencv/4.x/doc/tutorials/calib3d/camera_calibration/images/fileListImageUnDist.jpg" 
+img_main = imread(filePathURL)
+img_src= img_main.copy()
+if len(img_main.shape)==3:
+    gray_img=cv2.cvtColor(img_src, cv2.COLOR_BGR2GRAY) 
+else:
+    gray_img=img_src.copy()
+
