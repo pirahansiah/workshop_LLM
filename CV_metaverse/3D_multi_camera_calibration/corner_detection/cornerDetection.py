@@ -41,8 +41,8 @@ from scipy import signal as sig
 from scipy.ndimage import gaussian_filter
 
 sys.path.append(r'local_functions')
-from list_files import list_files
-from chessboard_corners import chessboard_corners
+#from list_files import list_files
+#from chessboard_corners import chessboard_corners
 
 filePathURL = r"https://raw.githubusercontent.com/opencv/opencv/4.x/doc/tutorials/calib3d/camera_calibration/images/fileListImageUnDist.jpg" 
 img_main = imread(filePathURL)
@@ -66,3 +66,14 @@ if ret == True:
         corners2 = cv2.cornerSubPix(gray_img, corners, (11,11),(-1,-1), criteria)
         imgpoints.append(corners2)
         image_with_corners = cv2.drawChessboardCorners(gray_img, CHECKERBOARD, corners2, ret)
+
+ret, mtx, dist, rvecs, tvecs = cv2.calibrateCamera(objpoints, imgpoints, image_with_corners.shape[::-1], None, None)
+print("Camera matrix : \n")
+print(mtx)
+print("dist : \n")
+print(dist)
+print("rvecs : \n")
+print(rvecs)
+print("tvecs : \n")
+print(tvecs)
+
