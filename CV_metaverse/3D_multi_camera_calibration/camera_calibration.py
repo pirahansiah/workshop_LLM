@@ -12,6 +12,9 @@
     # 3. Camera Calibration and Video Stabilization Framework for Robot Localization
         # https://link.springer.com/chapter/10.1007/978-3-030-74540-0_12 
 # camera calibration by OpenCV functions
+#reference: 
+    #https://learnopencv.com/camera-calibration-using-opencv/ 
+
 import os
 import sys
 import cv2
@@ -30,7 +33,7 @@ sys.path.append(r'local_functions')
 #from list_files import list_files
 #from chessboard_corners import chessboard_corners
 
-filePathURL = r"https://raw.githubusercontent.com/opencv/opencv/4.x/doc/tutorials/calib3d/camera_calibration/images/fileListImageUnDist.jpg" 
+filePathURL = r"/Users/farshid/Desktop/6*9.jpg" 
 img_main = imread(filePathURL)
 img_src= img_main.copy()
 if len(img_main.shape)==3:
