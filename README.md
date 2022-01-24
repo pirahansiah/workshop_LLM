@@ -17,6 +17,9 @@ I am familiar with IoT and Edge computing, Medical devices, cloud base solution 
 Platform for metaverse   
 AR/VR Frameworks Engineer For New Application Paradigm
 
+# Camera Calibration 
+### https://www.tiziran.com/topics/camera_calibration
+### Last Updated 24.Jan.2022
 
 The first step for camera calibration is corner detection. Based on my research, the calibration pattern image play important rule in the whole calibration process.
 
