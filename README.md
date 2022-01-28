@@ -1,4 +1,5 @@
 # Farshid PirahanSiah
+## Multi-camera calibration
 ## January 2022
 ### Computer Vision, Deep Learning, AI `Metaverse`
 #### https://github.com/pirahansiah/pirahansiah
@@ -16,6 +17,11 @@ I am familiar with IoT and Edge computing, Medical devices, cloud base solution 
 
 Platform for metaverse   
 AR/VR Frameworks Engineer For New Application Paradigm
+
+# Camera Calibration 
+### https://www.tiziran.com/topics/camera_calibration
+### Last Updated 24.Jan.2022
+Geometric camera calibration, also referred to as camera re-sectioning, estimates the parameters of a lens and image sensor of an image or video camera. These parameters can be used to correct for lens distortion, measure the size of an object in world units, or determine the location of the camera in a scene. These tasks are used in applications such as machine vision to detect and measure objects. They are also used in robotics, navigation systems, and 3-D scene reconstruction. Without any knowledge of the calibration of the cameras, it is impossible to do better than projective reconstruction (MathWorks).
 
 
 The first step for camera calibration is corner detection. Based on my research, the calibration pattern image play important rule in the whole calibration process.
