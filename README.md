@@ -1,6 +1,6 @@
 # Farshid PirahanSiah
 ## Multi-camera calibration
-## January 2022
+## February 2022
 ### Computer Vision, Deep Learning, AI `Metaverse`
 #### https://github.com/pirahansiah/pirahansiah
 
@@ -20,9 +20,12 @@ AR/VR Frameworks Engineer For New Application Paradigm
 
 # Camera Calibration 
 ### https://www.tiziran.com/topics/camera_calibration
-### Last Updated 24.Jan.2022
+### Last Updated 29.Jan.2022
 Geometric camera calibration, also referred to as camera re-sectioning, estimates the parameters of a lens and image sensor of an image or video camera. These parameters can be used to correct for lens distortion, measure the size of an object in world units, or determine the location of the camera in a scene. These tasks are used in applications such as machine vision to detect and measure objects. They are also used in robotics, navigation systems, and 3-D scene reconstruction. Without any knowledge of the calibration of the cameras, it is impossible to do better than projective reconstruction (MathWorks).
 
+Non-intrusive scene measurement tasks, such as 3D reconstruction, object inspection, target or self-localization or scene mapping require a calibrated camera model (Orghidan et al. 2011). Camera calibration is the process of approximating the parameters of a pinhole camera model (Tsai 1987; Stein 1995; Heikkila & Silven 1997) of a given photograph or video. 
+
+Camera self-calibration, also known as auto/fully calibration method, is not reliant upon the calibration reference object of a camera. Three-dimensional reconstruction and motion estimation are two fundamental tasks in computer vision (Kaehler & Bradski 2016). In both tasks, camera calibration is an essential step that bridges the 2D imaging plane and 3D space. For the past decade, camera calibration has been heavily investigated in the fields of computer vision and optics (Anuar et al. 2015; Garg & Deep 2015; Hong et al. 2015; Jia et al. 2015). Maybank and Faugeras (1992) introduced the concept of camera self-calibration. However, the self-calibration method is nonlinear and highly sensitive to noises; these methods can be enhanced by using active vision, where some specific camera motions are designed, such as pure rotation, orthogonal translations (Wang et al. 2004). For example, Hartley proposed using pure rotation to compute the infinite homography, then linearly calibrate the camera (Hartley & Zisserman 2003). However, the constraints on the specific motions are too strong to satisfy in practice, which hinder them from wider applications (Lei et al. 2004). For example, it is difficult to perform pure rotation around the camera’s optical center, even with a pure rotation platform, because it is difficult to obtain the camera’s optical center and even more difficult to coincide the camera’s optical center with the rotation center of a rotation platform. Furthermore, some researchers tried to improve self-calibration using more constraints, such as module constraint and loop constraint (Courchay et al. 2012). Another category of calibration methods is usually based on specific calibration rig or scene constraints (Liming et al. 2013). 
 
 The first step for camera calibration is corner detection. Based on my research, the calibration pattern image play important rule in the whole calibration process.
 
