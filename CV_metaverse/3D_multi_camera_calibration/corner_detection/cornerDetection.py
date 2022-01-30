@@ -1,5 +1,6 @@
 # https://www.tiziran.com/topics/camera_calibration
-# Last Updated 24.Jan.2022
+
+# Last Updated 30.Jan.2022
 # This function use several methods for preprocessing and postprocessing images for better recognition calibration pattern.
 # The pre build function of chessboard detection in OpenCV failed to recognize some calibration patterns
 
