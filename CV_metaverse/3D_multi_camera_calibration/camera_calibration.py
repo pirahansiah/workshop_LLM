@@ -33,7 +33,7 @@ sys.path.append(r'local_functions')
 #from list_files import list_files
 #from chessboard_corners import chessboard_corners
 
-filePathURL = r"/Users/farshid/Desktop/6*9.jpg" 
+filePathURL = r"/Users/farshid/Desktop/6d9.jpg" 
 img_main = imread(filePathURL)
 img_src= img_main.copy()
 if len(img_main.shape)==3:
