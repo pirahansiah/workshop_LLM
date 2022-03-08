@@ -1,5 +1,6 @@
 # https://www.tiziran.com/topics/camera_calibration
-# Last Updated 24.Jan.2022
+
+# Last Updated 20.Feb.2022
 # This function use several methods for preprocessing and postprocessing images for better recognition calibration pattern.
 # The pre build function of chessboard detection in OpenCV failed to recognize some calibration patterns
 
@@ -12,7 +13,7 @@
     #     - if the calibration pattern images are not good, blur, ... it need to enhance it first then use corner points to detect and use for calibration process
 # Farshid PirahanSiah
 ## Created 01.Jan.2022
-## Last Update 08.Jan.2022
+## Last Update 20.Feb.2022
 
 # The first step for camera calibration is corner detection. Based on my research, the calibration pattern image play important rule in the whole calibration process.
 
@@ -24,6 +25,8 @@
 
 # 3. Camera Calibration and Video Stabilization Framework for Robot Localization
 # https://link.springer.com/chapter/10.1007/978-3-030-74540-0_12 
+
+# Stereo camera calibration
 
 import os
 import sys
