@@ -1,13 +1,113 @@
-# Dr. Farshid PirahanSiah
+# Farshid PirahanSiah
 
-I am currently seeking opportunities in Berlin, Germany, focusing on the development of Large Language Models and advanced AI systems. My extensive experience in R&D for computer vision and multimodal applications positions me to effectively lead and innovate in this field.
+I am currently seeking opportunities in **computer vision**.
 
-## Seeking Position in Berlin, Germany only:
+## About Me
 
-- **Technical Lead in R&D for Computer Vision**
-- **End-to-end generative AI pipeline for cloud-based solutions**
-- **Multimodal LLMs for image processing applications**
-- **Large Vision Models (LVMs) for edge computing**
+I am an accomplished Research Engineer with over 7 years of experience, including a PhD in Computer Science and a Bachelor's in Software Engineering. My career has been dedicated to the fields of Computer Vision, Machine Learning, and ML Operations. I have a proven track record of transforming complex algorithms into production-ready applications, utilizing cloud technologies and containerization, and optimizing ML pipelines and infrastructure in fast-paced environments.
+
+With expertise in Machine Learning, IoT, Medical Imaging, and Robotics, I am proficient in designing image analysis algorithms and have made significant contributions to patents, books, and research papers. As a Technical Lead and Research Engineer, I have collaborated with stakeholders to define and achieve KPIs, managed cross-functional team projects, and deployed scalable AI solutions across cities and cloud platforms.
+
+## Experience
+
+- **10+ years:** PhD, R&D in Computer Vision, C++
+- **7+ years:** Machine Learning/Deep Learning, Python
+- **5+ years:** IoT, Model Optimization on Edge, Robotics, Medical Image Processing, Cloud Solutions (AWS)
+- **3+ years:** Technical Lead, Global Collaboration, Development Leadership
+- **1+ years:** LLM, Multimodal LLM, Vision-Based LLM, RAG, Langchain, OpenAI API
+
+## Core Skills
+
+- **Computer Vision and AI:** Advanced expertise in image processing, deep learning model development, and application deployment.
+- **Project Management:** Experienced in leading complex, cross-functional projects internationally.
+- **Technological Proficiency:** Skilled in **OpenCV**, **NumPy**, **Pandas**, **Matplotlib**, **PyTorch**, **TensorFlow**, **Docker**, and **AWS**.
+
+## Technical Skills
+
+- **Languages:** Python, C++, MATLAB
+- **Frameworks:** TensorFlow, PyTorch, Keras
+- **Tools:** Docker, Kubernetes, AWS, Git, Datadog, MLflow
+- **Operating Systems:** Windows, MacOS, Linux
+- **Containerization:** Docker
+- **Cloud Computing:** Amazon Web Services (AWS)
+- **Others:** CI/CD, GitHub Actions
+
+## Leadership and Collaboration
+
+Strong teamwork and leadership capabilities have enabled me to lead international projects that exceed business expectations, driving growth and technological innovation in computer vision and machine learning.
+
+
+
+## Patents and Publications
+- **Patents**: A METHOD FOR AUGMENTING A PLURALITY OF FACE IMAGES - 2021 
+    - The present invention relates to a method for increasing data for face analysis in video surveillance. 
+    - WO2021060971A1   
+- **Patents**: A METHOD FOR DETECTING A MOVING VEHICLE - 2021 
+    - The present invention relates to a method for detecting a moving vehicle.
+    - WO2021107761 
+- **Patents**: System and method for providing advertisement contents based on facial analysis - 2020 
+    - Invented an algorithm, methods, and system for advanced facial attribute detection, leading to improvements in advertising systems.
+    - WO2020141969A2 WIPO (PCT) 
+- **Book Chapter**: Camera Calibration and Video Stabilization for Robot Localization, Springer, 2021.
+- Authored over 16 publications in books, journals, and conferences globally.
+- My Google Scholar citation metrics are: Total Citations  **141**, h-index  **7**, i10-index  **6**
+
+---
+
+Feel free to connect with me through [LinkedIn](https://www.linkedin.com/in/pirahansiah/) or follow my updates on [GitHub](https://github.com/pirahansiah). I am always interested in discussing potential opportunities or collaborations in computer vision and AI-related projects.
+
+
+
+![pirahansiah's GitHub stats](https://github-readme-stats.vercel.app/api?username=pirahansiah&include_all_commits=true&count_private=true&show_icons=true&theme=radical&hide=contribs)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=pirahansiah&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+
+--- 
+
+## List of My Top GitHub Repositories:
+
+### 1. Generative AI Business Intelligence Computer Vision (BI4CV)
+- **Repository Link**: [BI4CV](https://github.com/pirahansiah/BI4CV)
+- **Description**: Welcome to the BI4CV repository! This project is dedicated to revolutionizing how businesses utilize image and video data for insightful Business Intelligence (BI). Our tools are designed to enhance data storytelling through advanced visualizations, interactive dashboards, and comprehensive reports. Our system smartly selects the optimal visual representations based on the complexity of your dataset, making analytics accessible to all users.
+- **Key Features**:
+  - Advanced Visualization Tools
+  - Smart Dashboard Creation
+  - Anomaly Detection
+  - Local LLM Integration
+  - User-Friendly Interface
+
+### 2. CV_metaverse/3D Multi-Camera Calibration
+- **Repository Link**: [3D Multi-Camera Calibration](https://github.com/pirahansiah/pirahansiah/tree/master/CV_metaverse/3D_multi_camera_calibration)
+- **Overview**: This project focuses on geometric camera calibration techniques to estimate the parameters of a lens and image sensor. Such calibration is crucial for applications in machine vision, robotics, navigation systems, and 3-D scene reconstruction.
+- **Research Links**:
+  - [Camera calibration for multi-modal robot vision based on image quality assessment](https://www.researchgate.net/publication/288174690_Camera_calibration_for_multi-modal_robot_vision_based_on_image_quality_assessment)
+  - [Pattern image significance for camera calibration](https://ieeexplore.ieee.org/document/8305440)
+  - [Camera Calibration and Video Stabilization Framework for Robot Localization](https://link.springer.com/chapter/10.1007/978-3-030-74540-0_12)
+
+### 3. Advanced Programming with Modern C++ 23 for Image Processing
+- **Repository Link**: [C++ Image Processing](https://github.com/pirahansiah/cvtest)
+- **Functionality**: This repository contains advanced C++ code examples for image processing tasks. The main function, `int func_image_info(cv::Mat src, cv::Mat &dst)`, provides detailed information about an image including size, histogram, and more.
+- **Additional Resources**: [YouTube tutorial on OpenCV](https://www.youtube.com/watch?v=gK1ybsWOqhs)
+
+### 4. The collection of Python scripts provides a range of functionalities: one script automates logging into KaggleHub and setting up a pretrained Gemma model for chat simulations, another builds a GUI for real-time OpenCV function testing using PyQt5, while a third manages an asynchronous chat application with aiohttp. Additionally, there's a script integrating machine learning models for data analysis using advanced libraries like langchain, another launching AI-powered chat applications, and one demonstrating interactions with natural language understanding models on HuggingFace using LLMware. There's also a script using MLflow to manage the machine learning lifecycle and another detailing the local setup of Kubernetes via Terraform, showcasing infrastructure management and resource cleanup. These scripts employ a variety of technologies including Python, Gemma, PyQt5, OpenCV, aiohttp, asyncio, langchain, transformers, MLflow, Kubernetes, Terraform, and Docker, useful for tasks ranging from machine learning to software deployment. #MachineLearning #SoftwareDevelopment
+
+- [Source Code](https://pirahansiah.com/src/LLMs/1gemma-test.py)
+  - This script logs into KaggleHub, downloads a pretrained Gemma model and tokenizer, sets up the model, and enables interactive chat simulation. ## Libraries: os, sys, torch, kagglehub, gemma_pytorch
+- [Source Code](https://pirahansiah.com/src/LLMs/FP.py)
+  - This Python script uses PyQt5 to create a GUI application for real-time testing of OpenCV functions on images. ## Libraries: sys, PyQt5, cv2, numpy, screeninfo
+- [Source Code](https://pirahansiah.com/src/LLMs/chatWithLLMs.py)
+  - his Python script defines an asynchronous chat application that uses the aiohttp library to interact with a chat model API, handling concurrency with semaphores and maintaining conversation history. ## Libraries: asyncio, aiohttp, collections, json, re
+- [Source Code](https://pirahansiah.com/src/LLMs/LLMOPs.ipynb)
+  - LLMOps & RAG: This Python script integrates various machine learning models and APIs to process financial data, interactively analyze text, images, and tables, and generate structured outputs. It employs libraries like langchain, transformers, and torch, alongside environmental variables for secure API key handling.
+- [Source Code](https://pirahansiah.com/src/LLMs/OpenRouter.py)
+  - Launch your chat app with OpenRouter's AI! 🚀 Utilize asyncio and aiohttp for seamless conversations and manage interactions with a smart queue. Dive into the future of chat applications now!"
+- [Source Code](https://pirahansiah.com/src/LLMs/RAG%20using%20CPU-based%20(No-GPU%20required)%20Hugging%20Face%20Models%20with%20LLMWare%20on%20your%20laptop.py)
+  - This Python script demonstrates how to use the LLMware library to interact with various models hosted on HuggingFace for natural language understanding tasks. It performs a specific query about an invoice using a provided context and compares the response from the model with a pre-defined answer. The script uses time measurement to track model loading and processing times.
+- [Source Code](https://pirahansiah.com/src/LLMs/mlflow/test-mlflow.py)
+  -  This Python script uses MLflow, a platform for managing the machine learning lifecycle, including experimentation, reproducibility, and deployment. It demonstrates how to log parameters, metrics, and artifacts within an MLflow experiment. Specifically, it logs a parameter named "param1" with a value of 5, logs multiple values for a metric called "foo," and records a markdown file as an artifact.
+- [Source Code](https://pirahansiah.com/src/LLMs/Kubernetes_Terraform/Kubernetes_Terraform.py)
+  -This script outlines the setup and use of Kubernetes on a local machine using Terraform, along with tools like Docker and Kubernetes command-line interface (CLI) utilities, all managed through Homebrew on macOS. It demonstrates the installation of required software, setting up Kubernetes with Terraform, querying the Kubernetes cluster, and visualizing Terraform plans. Finally, it guides through cleaning up resources with Terraform. This sequence ensures a practical approach to infrastructure as code (IaC) development and testing in a controlled, local environment.
+
+---
 
 ## Development of Generative AI Pipelines:
 
@@ -29,162 +129,29 @@ I am currently seeking opportunities in Berlin, Germany, focusing on the develop
 - **AI-Powered Summarization**: Developed capabilities for summarizing diverse data elements (text, tables, images) using AI-driven approaches, significantly improving information accessibility and user engagement.
 - **Community Contribution and Collaboration**: Actively engaged in community forums and collaborative projects, contributing to open-source projects and providing innovative solutions to complex problems in the AI space.
 
-I am eager to bring my expertise to a dynamic team in Berlin, where I can contribute to groundbreaking projects and further advance the field of artificial intelligence.
-
-
 ## Patents and Publications
-- **Patents**: A METHOD FOR AUGMENTING A PLURALITY OF FACE IMAGES - 2021 
-    - The present invention relates to a method for increasing data for face analysis in video surveillance. 
-    - WO2021060971A1   
-- **Patents**: A METHOD FOR DETECTING A MOVING VEHICLE - 2021 
-    - The present invention relates to a method for detecting a moving vehicle.
-    - WO2021107761 
-- **Patents**: System and method for providing advertisement contents based on facial analysis - 2020 
-    - Invented an algorithm, methods, and system for advanced facial attribute detection, leading to improvements in advertising systems.
-    - WO2020141969A2 WIPO (PCT) 
-- **Book Chapter**: Camera Calibration and Video Stabilization for Robot Localization, Springer, 2021.
-- Authored over 16 publications in books, journals, and conferences globally.
 
+- **Patents**:
+  - A METHOD FOR AUGMENTING A PLURALITY OF FACE IMAGES - 2021 (WO2021060971A1)
+  - A METHOD FOR DETECTING A MOVING VEHICLE - 2021 (WO2021107761)
+  - System and method for providing advertisement contents based on facial analysis - 2020 (WO2020141969A2 WIPO (PCT))
+- **Publications**:
+  - Camera Calibration and Video Stabilization for Robot Localization, Springer, 2021.
+  - Authored over 16 publications in books, journals, and conferences globally.
 
-## My works on LLMs:
-- Image Processing GPT
-  - GPTs: [Computer Vision Developer](https://chat.openai.com/g/g-vHELtCqJq-computer-vision-developer)
-  - Expert in Python, OpenCV for image processing and computer vision applications.  
-- MindMap about LLMs & LLMOps
+## My Works on LLMs:
+
+- **Image Processing GPT**:
+  - [Computer Vision Developer GPT](https://chat.openai.com/g/g-vHELtCqJq-computer-vision-developer)
+  - Expert in Python, OpenCV for image processing and computer vision applications.
+- **MindMap about LLMs & LLMOps**:
   - [My Note LLMs](https://pirahansiah.com/site/pages/md/DL.html)
-- Code for chat app with OpenRouter's AI! 🚀 Utilize asyncio and aiohttp for seamless conversations and manage interactions with a smart queue. Dive into the future of chat applications now!"
+- **Code for chat app with OpenRouter's AI**:
   - [Source Code](https://pirahansiah.com/src/LLMs/OpenRouter.py)
-- fine-tune LLMs
+  - Utilize asyncio and aiohttp for seamless conversations and manage interactions with a smart queue.
+- **Fine-tune LLMs**:
   - [Source Code](https://pirahansiah.com/src/LLMs/LLMOPs.ipynb)
-- Microsoft AI Lab: RAG Workflow with Azure AI
+- **Microsoft AI Lab: RAG Workflow with Azure AI**:
   - Lab Focus: Hands-on RAG workflow development using Azure AI Studio and Prompt Flow.
   - Skills Acquired: Mastery in LLMOps, Azure AI Studio usage, and Prompt Flow integration.
-  - Tools Used: GitHub Codespaces, Visual Studio Code, Azure AI & ML Studio, Azure Portal.
-  - Outcome: Successfully developed and deployed "Contoso Chat", enhancing skills in scalable AI solution development.   
-
-
-
-### Professional Profiles and Networks
-- [My LinkedIn Group 34K](https://www.linkedin.com/groups/10320678/)
-- [Stack Overflow](https://stackoverflow.com/users/3533188/farshid-pirahansiah)
-- [GitHub](https://github.com/pirahansiah)
-- [Tiziran](https://www.tiziran.com/)
-- [Personal Website](https://pirahansiah.com/)
-
-### Coding Challenges and Competitions
-- [HackerRank](https://www.hackerrank.com/profile/pirahansiah)
-- [LeetCode](https://leetcode.com/pirahansiah/)
-
-### Academic Contributions and Publications
-- [Google Scholar](https://scholar.google.com/citations?user=GvCEy4QAAAAJ&hl=en)
-- [ScienceOpen Collection](https://www.scienceopen.com/collection/da288fa0-3d52-46dc-9e07-73dfc597dfb8)
-
-### Project Repositories and Code Sharing
-- [Hugging Face Spaces](https://huggingface.co/spaces/pirahansiah/ComputerVision)
-- [Kaggle](https://www.kaggle.com/pirahansiah)
-- [NuGet](https://www.nuget.org/profiles/Farshid_Pirahansiah)
-- [PyPI](https://pypi.org/project/pirahansiah/)
-- [Docker Hub](https://hub.docker.com/u/pirahansiah)
-
-### Social Media and Community Engagement
-- [Twitter](https://twitter.com/pirahansiah)
-- [My Facebook Group 14K](https://www.facebook.com/groups/computervisiondeeplearning)
-- [Reddit](https://www.reddit.com/user/pirahansiah/)
-- [Telegram](https://t.me/computer_vision_llm)
-- [Mastodon](https://mastodon.social/@pirahansiah)
-- [Instagram](https://www.instagram.com/computer_vision_deep_learning/)
-- [WhatsApp Group](https://chat.whatsapp.com/COguUhOlNprFIjjaHTRppW)
-- [TikTok](https://www.tiktok.com/@pirahansiah)
-
-### Content Creation and Sharing
-- [Medium Blog](https://medium.com/@pirahansiah)
-- [YouTube Channel](https://www.youtube.com/@ComputerVisionDeepLearning)
-
-### Learning and Development Platforms
-- [GPT Store - Creator Profile](https://gptstore.ai/creators/user-bXM5WI8Cx4fppw1EEywZj2ZV)
-- [GPT Store - GPTs](https://gptstore.ai/gpts/x3pf_hdpR6-computer-vision-developer)
-- [Anaconda Cloud](https://anaconda.cloud/share/notebooks/b3402347-efbb-4a92-b754-fe8195b8ad63/overview)
-
-### Reading and Literature
-- [Goodreads](http://goodreads.com/pirahansiah)
-
-
-
-## Image Processing Test for C++
-## My GitHub about Advanced Programming with Modern C++ 23 for Image Processing 
-
-https://github.com/pirahansiah/cvtest  
-
-
-The first function is ```int func_image_info(cv::Mat src, cv::Mat &dst /*output*/)``` this function show information about image such as size, histogram, ....
-
-YouTube link for OpenCV:
-    https://www.youtube.com/watch?v=gK1ybsWOqhs 
-
-
-
-
-
-
-## Multi-camera calibration
-## Stereo camera calibration# Stereo camera calibration
-
-### Computer Vision, Deep Learning, AI `Metaverse`
-#### https://github.com/pirahansiah/pirahansiah
-
-I have 6+ years of experience as a computer vision research engineer in three multinational companies in two continents, strengthened by my academic background with a Master’s and PhD in Computer Science (Computer Vision). My expertise includes Technical Lead R&D, Software Specialists Image Processing - Medical Devices, Computer Vision with Machine Learning (Object Detection, Video Tracking), IoT, and Robotics; and I am experienced in designing algorithms for Image Thresholding, Optical Flow, Camera Calibration, and Stereo Vision. Lastly, I have a track record in creating effective metrics, building end-to-end pipelines, and writing production-level codes with OpenCV and Deep Learning frameworks (Caffe, TensorFlow, PyTorch).   
-
-FarshidPirahanSiah    
-I am interested in Metaverse, Medicine. I am interested in 3D `Camera Calibration` for extended reality headset in Metaverse.    
-I have experience in computer vision, deep learning and robotic.   
-I am familiar with IoT and Edge computing, Medical devices, cloud base solution (AWS), robotic.   
-
-
-![pirahansiah's GitHub stats](https://github-readme-stats.vercel.app/api?username=pirahansiah&include_all_commits=true&count_private=true&show_icons=true&theme=radical&hide=contribs)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=pirahansiah&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
-
-Platform for metaverse   
-AR/VR Frameworks Engineer For New Application Paradigm
-
-# Camera Calibration 
-### https://www.tiziran.com/topics/camera_calibration
-### Last Updated 29.Jan.2022
-Geometric camera calibration, also referred to as camera re-sectioning, estimates the parameters of a lens and image sensor of an image or video camera. These parameters can be used to correct for lens distortion, measure the size of an object in world units, or determine the location of the camera in a scene. These tasks are used in applications such as machine vision to detect and measure objects. They are also used in robotics, navigation systems, and 3-D scene reconstruction. Without any knowledge of the calibration of the cameras, it is impossible to do better than projective reconstruction (MathWorks).
-
-Non-intrusive scene measurement tasks, such as 3D reconstruction, object inspection, target or self-localization or scene mapping require a calibrated camera model (Orghidan et al. 2011). Camera calibration is the process of approximating the parameters of a pinhole camera model (Tsai 1987; Stein 1995; Heikkila & Silven 1997) of a given photograph or video. 
-
-Camera self-calibration, also known as auto/fully calibration method, is not reliant upon the calibration reference object of a camera. Three-dimensional reconstruction and motion estimation are two fundamental tasks in computer vision (Kaehler & Bradski 2016). In both tasks, camera calibration is an essential step that bridges the 2D imaging plane and 3D space. For the past decade, camera calibration has been heavily investigated in the fields of computer vision and optics (Anuar et al. 2015; Garg & Deep 2015; Hong et al. 2015; Jia et al. 2015). Maybank and Faugeras (1992) introduced the concept of camera self-calibration. However, the self-calibration method is nonlinear and highly sensitive to noises; these methods can be enhanced by using active vision, where some specific camera motions are designed, such as pure rotation, orthogonal translations (Wang et al. 2004). For example, Hartley proposed using pure rotation to compute the infinite homography, then linearly calibrate the camera (Hartley & Zisserman 2003). However, the constraints on the specific motions are too strong to satisfy in practice, which hinder them from wider applications (Lei et al. 2004). For example, it is difficult to perform pure rotation around the camera’s optical center, even with a pure rotation platform, because it is difficult to obtain the camera’s optical center and even more difficult to coincide the camera’s optical center with the rotation center of a rotation platform. Furthermore, some researchers tried to improve self-calibration using more constraints, such as module constraint and loop constraint (Courchay et al. 2012). Another category of calibration methods is usually based on specific calibration rig or scene constraints (Liming et al. 2013). 
-
-The first step for camera calibration is corner detection. Based on my research, the calibration pattern image play important rule in the whole calibration process.
-
-1. Camera calibration for multi-modal robot vision based on image quality assessment
-https://www.researchgate.net/profile/Farshid-Pirahansiah/publication/288174690_Camera_calibration_for_multi-modal_robot_vision_based_on_image_quality_assessment/links/5735bc2908aea45ee83c999e/Camera-calibration-for-multi-modal-robot-vision-based-on-image-quality-assessment.pdf 
-
-2. Pattern image significance for camera calibration
-https://ieeexplore.ieee.org/abstract/document/8305440 
-
-3. Camera Calibration and Video Stabilization Framework for Robot Localization
-https://link.springer.com/chapter/10.1007/978-3-030-74540-0_12 
-
-- CV_metaverse
-    - 3D_multi_camera_calibration
-        - corner_Detection 
-            - cornerDetection.ipynb
-        - auto multi camera calibration 
-
-
-
-Top source code:
-
-    - cornerDetection.ipynb
-        
-        - It use several preprocessing and postprocessing steps to enhance corner detection use by camera calibration.
-
-        - 3D multi camera calibration require detect and set points for all camera together  
-
-        - if the calibration pattern images are not good, blur, ... it need to enhance it first then use corner points to detect and use for calibration process
-
-
-#computervision #AI #objectdetection #objecttracking #ml #research #CNN #gans #convolutionalneuralnetworks #ai #vr #reinforcementlearning #mlops #aiforbusiness #science #researcher #phd #cameracalibration #opticalflow #videostablization #humanoidrobot #localization #3dSLAM #reconstruction #pointcloud #mixedreality #edgecomputing #raspberrypi #intelstick #googlecoral #jetsonnano #nvidiavgpu #tensorflowjs #pytorch #opencv #aikit #caffee #DIGITS #c++ #python #ubuntu #farshidpirahansiah #tiziran.com #farshid #pirahansiah #robotics #tiziran.com #farshid #pirahansiah #MultiCameraMultiClassMultiObjectTracking #deeplearning #machinelearning #artificialintelligence #tensorflow #robotics #3dvision #sterovision #depthmap #RCNN #machinevision #imageprocessing #patternrecognition #compiler #RISC-V #RNN #fullStackDeepLearning #productinnovation #patents #TensorRT #ApacheTVM #TFLite #PyTorchmobile #dockers #gRPC #RESTAPIs #GRPC #GraphQL #imageprocessing #patternrecognition 
-#EnablingEfficient #high-performance #Accelerators #Optimization #computervision #AI #objectdetection #objecttracking #ml #research #CNN #gans #convolutionalneuralnetworks #ai #vr #reinforcementlearning #mlops #aiforbusiness #science #researcher #phd #cameracalibration #opticalflow #videostablization #humanoidrobot #localization #3dSLAM #reconstruction #pointcloud #AR/VR #mixedreality #edgecomputing #raspberrypi #intelstick #googlecoral #jetsonnano #nvidiavgpu #tensorflowjs #pytorch #opencv #aikit #caffee #DIGITS #c++ #python #ubuntu #farshidpirahansiah #tiziran.com #farshid #pirahansiah #robotics #SingleObjecttracking #SOT #MultiObjecttracking #MOT #MultiTargetTracking #MTT #MultiClassMultiObjecttracking #MCMOT #MultiCameraMultiClassMultiObjectTracking #MCMCMOT #deeplearning #machinelearning #artificialintelligence #computervision #video #objectdetection #objecttracking #tensorflow #innovation #learning #datascience #robotics #3dvision #sterovision #depthmap #RCNN #machinevision #imageprocessing #patternrecognition #compiler #RISC-V #RNN #fullStackDeepLearning #productinnovation #patents #TensorRT #ApacheTVM #TFLite #PyTorchmobile #TensorFlow.js #CoreML #MLkit #DataDog #NewRelic #AmazonCloudWatch #dockers #gRPC #RESTAPIs #GRPC #GraphQL #farshidpirahansiah #tiziran.com #farshid #pirahansiah #robotics #SingleObjecttracking #SOT #MultiObjecttracking #MOT #MultiTargetTracking #MTT #MultiClassMultiObjecttracking #MCMOT #MultiCameraMultiClassMultiObjectTracking #MCMCMOT #deeplearning #machinelearning #artificialintelligence #computervision #video #objectdetection #objecttracking #tensorflow #innovation #learning #datascience #robotics #3dvision #sterovision #depthmap #RCNN #objectdetection #objecttracking #ml #research #CNN #gans #convolutionalneuralnetworks #ai #vr #reinforcementlearning #mlops #aiforbusiness #science #researcher #phd #cameracalibration #opticalflow #videostablization #humanoidrobot #localization #3dSLAM #reconstruction #pointcloud #AR/VR #mixedreality #edgecomputing #raspberrypi #intelstick #googlecoral #jetsonnano #nvidiavgpu #tensorflowjs #pytorch #opencv #aikit #caffee #DIGITS #c++ #python #ubuntu #machinevision #imageprocessing #patternrecognition #SingleObjecttracking #SOT #MultiObjecttracking #MOT #MultiTargetTracking #MTT #MultiClassMultiObjecttracking #MCMOT #MultiCameraMultiClassMultiObjectTracking #MCMCMOT #deeplearning #machinelearning #artificialintelligence #computervision #video #objectdetection #objecttracking #tensorflow #innovation #learning #datascience #robotics #3dvision #sterovision #depthmap #RCNN #objectdetection #objecttracking #ml #research #CNN #GAN 
-
+  - Tools Used: GitHub Codespaces, Visual Studio Code, Azure AI & ML Studio
