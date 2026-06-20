@@ -119,3 +119,8 @@ todo.txt
 
 # pytest
 .pytest_cache/
+
+# macOS and career assets
+CAREER_IMPACT.md
+.DS_Store
+._pack-*.idx
