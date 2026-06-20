@@ -1,68 +1,95 @@
-# Last Updated 28.Jan.2022
-# www.tiziran.com
-# Download source code form 
-    #   https://github.com/pirahansiah/pirahansiah/tree/master/CV_metaverse/3D_multi_camera_calibration/
-# This function use several methods for preprocessing and postprocessing images for better recognition calibration pattern.
-# The pre build function of chessboard detection in OpenCV failed to recognize some calibration patterns
-# The first step for camera calibration is corner detection. Based on my research, the calibration pattern image play important rule in the whole calibration process.
-    # 1. Camera calibration for multi-modal robot vision based on image quality assessment
-        # https://www.researchgate.net/profile/Farshid-Pirahansiah/publication/288174690_Camera_calibration_for_multi-modal_robot_vision_based_on_image_quality_assessment/links/5735bc2908aea45ee83c999e/Camera-calibration-for-multi-modal-robot-vision-based-on-image-quality-assessment.pdf 
-    # 2. Pattern image significance for camera calibration
-        # https://ieeexplore.ieee.org/abstract/document/8305440 
-    # 3. Camera Calibration and Video Stabilization Framework for Robot Localization
-        # https://link.springer.com/chapter/10.1007/978-3-030-74540-0_12 
-# camera calibration by OpenCV functions
-#reference: 
-    #https://learnopencv.com/camera-calibration-using-opencv/ 
+"""Camera calibration for multi-camera 3D setups.
 
-import os
-import sys
+Uses OpenCV chessboard corner detection to compute intrinsics.
+Run with a calibration image path argument, or uses a cached remote sample.
+"""
+
+from __future__ import annotations
+
 import cv2
-import tqdm
-import urllib
 import numpy as np
+from numpy.typing import NDArray
 
-from skimage.io import imread
-from skimage.color import rgb2gray
 
-from scipy import *
-from scipy import signal as sig
-from scipy.ndimage import gaussian_filter
+def calibrate_camera(
+    image_path: str,
+    checkerboard: tuple[int, int] = (6, 9),
+) -> dict[str, object]:
+    """Detect corners in *image_path* and calibrate the camera.
 
-sys.path.append(r'local_functions')
-#from list_files import list_files
-#from chessboard_corners import chessboard_corners
+    Args:
+        image_path: Filesystem path to a chessboard image.
+        checkerboard: Inner corner grid (cols, rows).
 
-filePathURL = r"/Users/farshid/Desktop/6d9.jpg" 
-img_main = imread(filePathURL)
-img_src= img_main.copy()
-if len(img_main.shape)==3:
-    gray_img=cv2.cvtColor(img_src, cv2.COLOR_BGR2GRAY) 
-else:
-    gray_img=img_src.copy()
-#2
-image_with_corners=gray_img.copy()
-CHECKERBOARD = (6,9)
-criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 30, 0.001)
-objpoints = []
-imgpoints = []
-objp = np.zeros((1, CHECKERBOARD[0] * CHECKERBOARD[1], 3), np.float32)
-objp[0,:,:2] = np.mgrid[0:CHECKERBOARD[0], 0:CHECKERBOARD[1]].T.reshape(-1, 2)
-prev_img_shape = None
-ret, corners = cv2.findChessboardCorners(gray_img, CHECKERBOARD, cv2.CALIB_CB_ADAPTIVE_THRESH + cv2.CALIB_CB_FAST_CHECK + cv2.CALIB_CB_NORMALIZE_IMAGE)
-if ret == True:
+    Returns:
+        Dictionary with ``camera_matrix``, ``dist_coeffs``, ``rvecs``, ``tvecs``.
+    """
+    img = cv2.imread(image_path)
+    if img is None:
+        raise FileNotFoundError(f"Cannot read image: {image_path}")
+
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) if len(img.shape) == 3 else img.copy()
+
+    criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 30, 0.001)
+    cols, rows = checkerboard
+
+    objp = np.zeros((1, cols * rows, 3), np.float32)
+    objp[0, :, :2] = np.mgrid[0:cols, 0:rows].T.reshape(-1, 2)
+
+    objpoints: list[NDArray[np.float32]] = []
+    imgpoints: list[NDArray[np.float32]] = []
+
+    ret, corners = cv2.findChessboardCorners(
+        gray,
+        checkerboard,
+        cv2.CALIB_CB_ADAPTIVE_THRESH | cv2.CALIB_CB_FAST_CHECK | cv2.CALIB_CB_NORMALIZE_IMAGE,
+    )
+
+    corners_img = gray.copy()
+    if ret:
+        corners_sub = cv2.cornerSubPix(gray, corners, (11, 11), (-1, -1), criteria)
         objpoints.append(objp)
-        corners2 = cv2.cornerSubPix(gray_img, corners, (11,11),(-1,-1), criteria)
-        imgpoints.append(corners2)
-        image_with_corners = cv2.drawChessboardCorners(gray_img, CHECKERBOARD, corners2, ret)
+        imgpoints.append(corners_sub)
+        corners_img = cv2.drawChessboardCorners(gray, checkerboard, corners_sub, ret)
 
-ret, mtx, dist, rvecs, tvecs = cv2.calibrateCamera(objpoints, imgpoints, image_with_corners.shape[::-1], None, None)
-print("Camera matrix : \n")
-print(mtx)
-print("dist : \n")
-print(dist)
-print("rvecs : \n")
-print(rvecs)
-print("tvecs : \n")
-print(tvecs)
+    mtx = dist = rvecs = tvecs = None
+    ret_cal = False
+    if objpoints and imgpoints:
+        ret_cal, mtx, dist, rvecs, tvecs = cv2.calibrateCamera(
+            objpoints, imgpoints, corners_img.shape[::-1], None, None
+        )
 
+    print("Camera matrix:\n", mtx)
+    print("Distortion:\n", dist)
+    print("Rotation vectors:\n", rvecs)
+    print("Translation vectors:\n", tvecs)
+
+    return {
+        "camera_matrix": mtx,
+        "dist_coeffs": dist,
+        "rotation_vectors": rvecs,
+        "translation_vectors": tvecs,
+        "calibration_success": ret_cal,
+    }
+
+
+if __name__ == "__main__":
+    import sys
+    import urllib.request
+    from pathlib import Path
+
+    if len(sys.argv) > 1:
+        image_path = sys.argv[1]
+    else:
+        url = (
+            "https://raw.githubusercontent.com/opencv/opencv/4.x/"
+            "doc/tutorials/calib3d/camera_calibration/images/fileListImageUnDist.jpg"
+        )
+        cache_dir = Path(__file__).resolve().parent / ".cache"
+        cache_dir.mkdir(exist_ok=True)
+        image_path = str(cache_dir / "sample.jpg")
+        if not Path(image_path).exists():
+            urllib.request.urlretrieve(url, image_path)
+        print(f"No path argument — using cached sample: {image_path}")
+
+    calibrate_camera(image_path)

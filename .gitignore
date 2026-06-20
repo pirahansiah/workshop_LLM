@@ -108,3 +108,14 @@ venv.bak/
 
 # my TODO list
 todo.txt
+
+# macOS
+._*
+.Spotlight-V100
+.Trashes
+
+# Docker
+.cache/
+
+# pytest
+.pytest_cache/

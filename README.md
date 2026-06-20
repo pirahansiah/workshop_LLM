@@ -142,4 +142,47 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
+## 12-Month Roadmap (2025-2026)
+
+### Month 1-2: Foundation
+- [ ] Add LLM chat modules with OpenAI API v2.x (chat completions, function calling)
+- [ ] Implement async streaming responses for Ollama/OpenAI
+- [ ] Add type hints and pytest to all existing Python files
+- [ ] Set up CI/CD with GitHub Actions (lint, test, type-check)
+
+### Month 3-4: RAG Pipeline
+- [ ] Build document loader with smart chunking (semantic, recursive)
+- [ ] Integrate Qdrant/Chroma vector store with hybrid search
+- [ ] Implement HyDE (Hypothetical Document Embeddings) query transformation
+- [ ] Add cross-encoder reranking with Cohere/Jina
+- [ ] Create RAG evaluation framework (faithfulness, relevancy scores)
+
+### Month 5-6: Multimodal Integration
+- [ ] Connect CV calibration output to LLM vision pipelines
+- [ ] Implement image-to-text with GPT-4V / Gemini Vision
+- [ ] Add video frame extraction and LLM analysis pipeline
+- [ ] Build Streamlit demo for real-time multimodal interaction
+
+### Month 7-8: Fine-tuning & Edge Deployment
+- [ ] LoRA/QLoRA fine-tuning scripts for Llama 4, Qwen 3
+- [ ] GGUF quantization pipeline for Ollama deployment
+- [ ] ONNX Runtime export for edge devices (Raspberry Pi 5, Jetson)
+- [ ] Benchmark inference latency across hardware targets
+
+### Month 9-10: Agentic Workflows
+- [ ] Multi-agent system with CrewAI for automated CV analysis
+- [ ] Tool-use framework connecting OpenCV functions as LLM tools
+- [ ] Self-correcting RAG with CRAG pattern
+- [ ] Add LangGraph state-machine for complex workflows
+
+### Month 11-12: Production & Scale
+- [ ] FastAPI backend with streaming SSE endpoints
+- [ ] Docker Compose for full stack (Ollama + Qdrant + API)
+- [ ] NVIDIA Spark optimization with CUDA 13 kernels
+- [ ] Apple Silicon optimization (Metal, Neural Engine)
+- [ ] Comprehensive documentation and video tutorials
+- [ ] Performance benchmarks: M5 Max vs Intel Ultra 9 vs Jetson
+
+---
+
 **Maintainer:** [Farshid Pirahansiah](https://github.com/pirahansiah)
